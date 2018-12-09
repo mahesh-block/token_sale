@@ -22,11 +22,11 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50620f4240600081905550609e806100296000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a7230582098e78fd29a5168ada32b6ea03b0ad3845a88b262457084b6a9b15070ee1d16d90029",
-  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a7230582098e78fd29a5168ada32b6ea03b0ad3845a88b262457084b6a9b15070ee1d16d90029",
-  "sourceMap": "27:236:0:-;;;189:71;8:9:-1;5:2;;;30:1;27;20:12;5:2;189:71:0;243:7;228:11;:22;;;;27:236;;;;;;",
-  "deployedSourceMap": "27:236:0:-;;;;;;;;;;;;;;;;;;;;;;;;150:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;150:26:0;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.2;\r\n\r\ncontract DappToken {\r\n    //construction\r\n    //Set the total number of tokens\r\n    //Read the total number of tokens\r\n    uint256 public totalSupply;\r\n    \r\n    function DappToken() public {\r\n        totalSupply  = 1000000;\r\n\r\n    }\r\n}\r\n",
+  "bytecode": "0x608060405234801561001057600080fd5b50620f4240600081905550609e806100296000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820b49ea7477be1b4e80b96bf4a3fac9e4b4cb9b60f4f2ad2b3f7c17a924ff10ae10029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820b49ea7477be1b4e80b96bf4a3fac9e4b4cb9b60f4f2ad2b3f7c17a924ff10ae10029",
+  "sourceMap": "27:147:0:-;;;96:75;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:75:0;152:7;138:11;:21;;;;27:147;;;;;;",
+  "deployedSourceMap": "27:147:0:-;;;;;;;;;;;;;;;;;;;;;;;;59:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:26:0;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.2;\r\n\r\ncontract DappToken {\r\n\r\n        uint256 public totalSupply;\r\n        function DappToken() public{\r\n            totalSupply = 1000000;\r\n        }\r\n}\r\n",
   "sourcePath": "D:\\DApps\\token_sale\\contracts\\DappToken.sol",
   "ast": {
     "absolutePath": "/D/DApps/token_sale/contracts/DappToken.sol",
@@ -68,7 +68,7 @@
             "name": "totalSupply",
             "nodeType": "VariableDeclaration",
             "scope": 12,
-            "src": "150:26:0",
+            "src": "59:26:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -79,7 +79,7 @@
               "id": 2,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "150:7:0",
+              "src": "59:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -92,7 +92,7 @@
             "body": {
               "id": 10,
               "nodeType": "Block",
-              "src": "217:43:0",
+              "src": "123:48:0",
               "statements": [
                 {
                   "expression": {
@@ -109,7 +109,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "228:11:0",
+                      "src": "138:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -127,7 +127,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "243:7:0",
+                      "src": "152:7:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1000000_by_1",
@@ -135,7 +135,7 @@
                       },
                       "value": "1000000"
                     },
-                    "src": "228:22:0",
+                    "src": "138:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -143,7 +143,7 @@
                   },
                   "id": 9,
                   "nodeType": "ExpressionStatement",
-                  "src": "228:22:0"
+                  "src": "138:21:0"
                 }
               ]
             },
@@ -159,27 +159,27 @@
               "id": 4,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "207:2:0"
+              "src": "114:2:0"
             },
             "payable": false,
             "returnParameters": {
               "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "217:0:0"
+              "src": "123:0:0"
             },
             "scope": 12,
-            "src": "189:71:0",
+            "src": "96:75:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 13,
-        "src": "27:236:0"
+        "src": "27:147:0"
       }
     ],
-    "src": "0:265:0"
+    "src": "0:176:0"
   },
   "legacyAST": {
     "absolutePath": "/D/DApps/token_sale/contracts/DappToken.sol",
@@ -221,7 +221,7 @@
             "name": "totalSupply",
             "nodeType": "VariableDeclaration",
             "scope": 12,
-            "src": "150:26:0",
+            "src": "59:26:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -232,7 +232,7 @@
               "id": 2,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "150:7:0",
+              "src": "59:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -245,7 +245,7 @@
             "body": {
               "id": 10,
               "nodeType": "Block",
-              "src": "217:43:0",
+              "src": "123:48:0",
               "statements": [
                 {
                   "expression": {
@@ -262,7 +262,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "228:11:0",
+                      "src": "138:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -280,7 +280,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "243:7:0",
+                      "src": "152:7:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1000000_by_1",
@@ -288,7 +288,7 @@
                       },
                       "value": "1000000"
                     },
-                    "src": "228:22:0",
+                    "src": "138:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -296,7 +296,7 @@
                   },
                   "id": 9,
                   "nodeType": "ExpressionStatement",
-                  "src": "228:22:0"
+                  "src": "138:21:0"
                 }
               ]
             },
@@ -312,27 +312,27 @@
               "id": 4,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "207:2:0"
+              "src": "114:2:0"
             },
             "payable": false,
             "returnParameters": {
               "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "217:0:0"
+              "src": "123:0:0"
             },
             "scope": 12,
-            "src": "189:71:0",
+            "src": "96:75:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 13,
-        "src": "27:236:0"
+        "src": "27:147:0"
       }
     ],
-    "src": "0:265:0"
+    "src": "0:176:0"
   },
   "compiler": {
     "name": "solc",
@@ -343,9 +343,9 @@
       "events": {},
       "links": {},
       "address": "0x9db5a28f4c1ed836be20a7beed61881a3addc677",
-      "transactionHash": "0x834df69141240cd3a7ecd7353b058b50f0b10be879bfd7641da7de8129468010"
+      "transactionHash": "0xb4960a855011a732ca95397a001c5a64ca3736b25934aaa6b334df3766b18754"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-02T23:17:12.835Z"
+  "updatedAt": "2018-12-09T00:40:53.176Z"
 }
