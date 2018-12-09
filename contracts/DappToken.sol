@@ -2,8 +2,13 @@ pragma solidity ^0.4.2;
 
 contract DappToken {
 
+        // variable declaration
         uint256 public totalSupply;
-        function DappToken() public{
-            totalSupply = 1000000;
+        mapping (address => uint256) public balanceOf;
+
+        function DappToken(uint256 _initialSupply) public{
+            totalSupply = _initialSupply;
         }
+
+        
 }
